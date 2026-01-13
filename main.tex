@@ -1,0 +1,198 @@
+%-------------------------
+% Resume in Latex
+% Author : Krishna Kumar
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear header/footer
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting with extra space after
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
+
+\pdfgentounicode=1
+
+%-------------------------------------------
+%%%%%%  CUSTOM COMMANDS FOR BULLETS  %%%%%%%
+% Single resume item (bullet)
+\newcommand{\resumeItem}[1]{\item \small{#1 \vspace{-2pt}}}
+
+% Subheading for job/project/role WITHOUT bullet, aligned properly
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{-2pt}
+  \noindent
+  \textbf{#1} \hfill \textit{\small #2} \\ % Company name and dates
+  \textit{\small #4 | #3} \vspace{-2pt}  % Role and location
+  \vspace{2pt}
+}
+
+% Optional sub-item (nested bullet)
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% List environment for job/project sections
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.2in, label=\textbullet]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+% List environment for plain bullet points
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.25in, label=\textbullet]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% List environment for summary (no bullet)
+\newcommand{\resumeSummaryListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSummaryListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Krishna Kumar} \\ \vspace{1pt}
+    \small Noida, India $|$ +91 8933038005 $|$ 
+    \href{mailto:krishnakum@gmail.com}{krishnakumar.myjobs@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/krishna-kumar2021/}{linkedin.com/in/krishna-kumar2021/}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\resumeSummaryListStart
+\item \textbf{Data Engineer} with \textbf{7+ years} of experience designing, building, and optimizing \textbf{scalable data pipelines} and platforms. Expert in \textbf{ETL/ELT}, \textbf{data warehousing}, and \textbf{cloud solutions (GCP)}, with hands-on experience in \textbf{SQL}, \textbf{Python}, \textbf{Spark}, and \textbf{Hadoop}.
+\item Proven ability to enable analytics, reporting, and ML workflows by building reliable, high-quality data foundations. Collaborative and open to exploring \textbf{ML/AI-driven data solutions}.
+\resumeSummaryListEnd
+\vspace{3mm}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\resumeSubHeadingListStart
+\resumeItemListStart
+\resumeItem{\textbf{Languages:} Python, SQL, Java}
+\resumeItem{\textbf{Cloud / GCP:} BigQuery, Dataflow (Apache Beam), Pub/Sub, DataProc, Cloud Functions, Cloud Composer, GCS, BigTable, Data Fusion, Cloud SQL, Cloud Scheduler, Airflow}
+\resumeItem{\textbf{Big Data:} Apache Spark, Hadoop, HDFS, Kafka}
+\resumeItem{\textbf{BI Tools:} Tableau, Power BI}
+\resumeItem{\textbf{AWS:} EC2, S3, RDS}
+\resumeItem{\textbf{Database:} MySQL / RDBMS}
+\resumeItem{\textbf{Version Control:} Docker, Kubernetes}
+\resumeItem{\textbf{Version Control:} GitHub, Azure DevOps}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{3mm}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+% HCL Tech
+\resumeSubheading
+{HCL Tech}{Mar 2024 -- Present}{Noida, India}{Technical Lead}
+
+% Project headings without bullets
+\noindent\textbf{ Project: On-Prem to GCP Cloud Data Platform Migration (Finance Domain)}
+\resumeItemListStart
+\resumeItem{Led full migration of enterprise data pipelines from on-prem to GCP, improving system scalability by 40\% and operational efficiency by 35\%.}
+\resumeItem{Designed and implemented batch and streaming pipelines to process over 10 TB of financial and transactional data daily.}
+\resumeItem{Built and optimized BigQuery data models for analytics, reporting, and downstream consumption, reducing query runtime by 30\%.}
+\resumeItem{Developed robust ETL/ELT workflows with automated data quality checks, monitoring, and failure-handling frameworks.}
+\resumeItem{Partnered with analytics and business teams to deliver scalable, cloud-native data solutions.}
+\resumeItem{Ensured compliance with cloud security, governance, and performance best practices.}
+\resumeItemListEnd
+
+\noindent\textbf{ Project: Cloud-Based Data Pipeline Development (Finance Product)}
+\resumeItemListStart
+\resumeItem{Designed and developed scalable batch and streaming pipelines handling 5+ TB of transactional and event-driven data per day.}
+\resumeItem{Built optimized transformations and curated datasets to support near real-time analytics, reducing pipeline latency by 25\%.}
+\resumeItem{Collaborated with stakeholders to deliver high-quality, reliable data solutions enabling accurate reporting and analytics.}
+\resumeItem{Applied best practices in pipeline orchestration, performance tuning, and data reliability.}
+\resumeItem{Supported downstream analytics and ML workflows with clean, well-structured, and trusted data.}
+\resumeItemListEnd
+\vspace{2mm}
+
+% Accenture
+\resumeSubheading
+{Accenture}{June 2022 -- Mar 2024}{Noida, India}{Senior Data Engineer}
+\resumeItemListStart
+\resumeItem{Developed batch and streaming pipelines using GCP Dataflow, Airflow, Pub/Sub, and Python to support data lake migration.}
+\resumeItem{Built complex BigQuery stored procedures and ETL workflows; implemented Cloud Functions and automated DAGs deployment.}
+\resumeItem{Worked closely with Business Analysts to gather requirements and deliver high-quality, production-ready pipelines.}
+\resumeItem{Improved pipeline performance and reliability by 25\% through optimization and monitoring frameworks.}
+\resumeItemListEnd
+\vspace{2mm}
+
+% Ericsson - Data Engineer
+\resumeSubheading
+{Ericsson Global India Limited}{Oct 2021 -- June 2022}{Noida, India}{Data Engineer}
+\resumeItemListStart
+\resumeItem{Built streaming pipelines using GCP Dataflow and processed large-scale financial and network data in BigQuery and Spark.}
+\resumeItem{Managed cluster and infrastructure using DataProc; delivered KPI insights for network performance improvements.}
+\resumeItemListEnd
+\vspace{2mm}
+
+% Ericsson - Data Analyst
+\resumeSubheading
+{Ericsson Global India Limited}{Oct 2018 -- Sep 2021}{Noida, India}{Data Analyst}
+\resumeItemListStart
+\resumeItem{Led Tableau dashboard development and reporting solutions for multiple telecom clients.}
+\resumeItem{Processed batch data using GCP Dataflow templates and Apache Spark; built complex BigQuery views for analytics.}
+\resumeItem{Performed data analysis using Python (Pandas, NumPy, Matplotlib) and automated processes, achieving 75\% time savings.}
+\resumeItem{Ensured 98\% SLA compliance and collaborated with clients for business strategy improvements.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{3mm}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+\noindent\textbf{Diploma in Machine Learning and AI} (University of Hyderabad) \hfill 2021 -- 2022 \\
+
+\noindent\textbf{B. Tech, Electronics and Communication} (PSIT/AKTU) 78\% \hfill 2014 -- 2018 \\
+
+
+\resumeSubHeadingListEnd
+\vspace{3mm}
+
+%-----------CERTIFICATIONS & AWARDS-----------
+\section{Certifications \& Awards}
+\resumeSubHeadingListStart
+\resumeItemListStart
+\resumeItem{GCP Associate Cloud Engineer}
+\resumeItem{AWS Certified Solutions Architect} 
+\resumeItem{Azure Skill Badges}
+\resumeItem{Python for Data Science (IBM)} 
+\resumeItem{IBM Certified Data Analyst}
+\resumeItem{Machine Learning Fundamentals \& Experiences (Ericsson Managed Services)}
+\resumeItem{Client Value Creation Award (Accenture); Ericsson ACE Award; Best Performer of the Month (2x); Excellent Service Delivery Award}
+\resumeItem{Gold Badge for Python on HackerRank}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{3mm}
+
+\end{document}
